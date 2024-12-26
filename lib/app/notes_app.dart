@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:notes_app/core/router/const_route_screen.dart';
 import 'package:notes_app/core/router/manger_route_screen.dart';
 
 class NotesApp extends StatelessWidget {
@@ -14,14 +15,14 @@ class NotesApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_ , child) {
         return MaterialApp(
-          
           debugShowCheckedModeBanner: false,
-          title: 'First Method',
           theme: ThemeData(
             fontFamily: "Montserrat",
             primarySwatch: Colors.blue,
+            brightness: Brightness.dark,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
+          initialRoute:ConstRouteScreen.NotesScreen, 
           onGenerateRoute:mangerRouteScreen.onGenerateRoute ,
           home: child,
         );

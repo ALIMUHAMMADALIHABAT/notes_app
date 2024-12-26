@@ -5,6 +5,20 @@ class NotesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Notes"),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.search))
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            Text("Notes Screen"),
+          ],
+        ),
+      ),
+    );
   }
 }
