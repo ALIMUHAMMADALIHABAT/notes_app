@@ -30,9 +30,35 @@ class NotesScreen extends StatelessWidget {
         "subtitle": "Build your career with Ali Habbat",
         "date": "2025/1/24",
       },
+      {
+        "title": "Flutter Tips",
+        "subtitle": "Build your career with Ali Habbat",
+        "date": "2025/1/24",
+      },
+      {
+        "title": "Flutter Tips",
+        "subtitle": "Build your career with Ali Habbat",
+        "date": "2025/1/24",
+      },
+      {
+        "title": "Flutter Tips",
+        "subtitle": "Build your career with Ali Habbat",
+        "date": "2025/1/24",
+      },
+      {
+        "title": "Flutter Tips",
+        "subtitle": "Build your career with Ali Habbat",
+        "date": "2025/1/24",
+      },
     ];
 
     return Scaffold(
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add,
+        size: 30.w,
+         ),),
+      ),
       appBar: AppBar(
         title: Text("Notes"),
         actions: [
