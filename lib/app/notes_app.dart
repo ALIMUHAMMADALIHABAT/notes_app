@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:notes_app/core/router/manger_route_screen.dart';
 
 class NotesApp extends StatelessWidget {
-  const NotesApp({super.key});
+  const NotesApp({super.key, required this.mangerRouteScreen});
+    final MangerRouteScreen  mangerRouteScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,7 @@ class NotesApp extends StatelessWidget {
             primarySwatch: Colors.blue,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
+          onGenerateRoute:mangerRouteScreen.onGenerateRoute ,
           home: child,
         );
       },
