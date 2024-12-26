@@ -14,9 +14,11 @@ class NotesApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_ , child) {
         return MaterialApp(
+          
           debugShowCheckedModeBanner: false,
           title: 'First Method',
           theme: ThemeData(
+            fontFamily: "Montserrat",
             primarySwatch: Colors.blue,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
